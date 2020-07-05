@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feedback</title>
+    <link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <!-- This will be the top navigation bar (aka the anchor link) -->
+    <ul class="anchor_section">
+        <li><a href="../../assignment.html" class="anchor_links">Assignmnt Page</a></li>
+        <li><a href="" class="anchor_links anchor_links_division">|</a></li>
+        <li><a href="../pages/me_and_my_passion.html" class="anchor_links">Me and My Passion</a></li>
+        <li><a href="../pages/me_and_my_passion.html#planning" class="anchor_links">Planning</a></li>
+        <li><a href="" class="anchor_links anchor_links_division">|</a></li>
+        <li><a href="../pages/source_log.html" class="anchor_links">Source Log</a></li>
+        <li><a href="../../index.html" class="anchor_links">Site Map</a></li>
+        <li><a href="" class="anchor_links anchor_links_division">|</a></li>
+        <li><a href="../pages/feedback_form.html" class="anchor_links">Feedback</a></li>
+    </ul>
+    
+    
+    <h1> Heads up! OAO</h1>
+    <div style="text-align: center;">
+        Tons of thanks for the support, it's only with the help of your feedback i may improve! 
+        <br>
+        The following question are rating from 1 to 5, 
+        with 1 as the lowst score or strongly disagree; And feel free to add some other 
+        comments to help me improve the site
+    </div>
+    
+    <!-- Using less secure GET method considering a user might write a lot of comment  -->
+    <!-- (since "POST method is unsuitable for transferring large amount of data") -->
+    <!-- TODO: feedback_form.php -->
+    <div>
+        <!-- Submit feedback using Email section -->
+        <h1 id="feedback-form-email">Feedback Email</h1>
+        If you have any suggestions or requirement to the site (bug, issues, anything!), you can sent a email to me.  
+        Please also include your name in the content section, so I can reach you if that's needed. 
+       <br> <br>
+        <form action="mailto:u6966459@anu.edu.au" method="GET" enctype="text/plain" class="feedbackform-email">
+
+            <!-- using textarea instead of text input and change the size a little (cols/rows) for better look -->
+            Topic：  <br><textarea name="subject" cols="83" placeholder="e.g. Feedback Form " required></textarea><br> 
+            <!-- Adding some more input after going thought MOOC -->
+            What is your favourite part of the site?<br>
+            <input type="text" name="mail_fav_part" size="85" placeholder="e.g. Keyboard Gallary"><br>
+            From a score of 1-5 rate my website?<br>
+            <input type="text" name="mail_site_score" size="85" maxlength="1" placeholder="e.g. 5" required><br>
+            If you happen to also play the game r6, maybe we can play together? <br>
+            <input type="text" name="mail_game_id" size="85" placeholder="e.g My Game ID is xxxxxx"><br>
+            <!-- using textarea instead of text input and change the size a little (cols/rows) for better look -->
+            Any other comment? <br><textarea name="body" cols="83" rows="10" placeholder="e.g. Nothing further to coment"></textarea><br>
+            <!-- submission button -->
+            
+            <input class="submit-button" type="submit" value="Send" >
+        </form>
+
+        
+
+        <!-- Submit feedback using PHP section -->
+        <h1 id="feedback-form-php">Feedback Form</h1>
+        <blockquote>
+            "feedback_form.php" is not completed, part in dashline is not functional, they are just for look!
+        </blockquote>
+        <form name="form"  action="feedback_form.php" method="get" class="feedbackform-php">
+        <!-- Basic infomation -->
+        <h2>Basic Infomations:</h2>
+        <!-- use the relavant type to convinience the auto-fill applications/ plugin -->
+        Your Name:&nbsp;&nbsp;<input class="text-input" type="text" name="name" id="given-name" placeholder="N/A"><br> 
+        Your Email:&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email" placeholder="N/A"><br>
+        Your Mobile:&nbsp;<input type="text" name="phone-number" id="phone-number" placeholder="N/A"><br>
+        <br>
+
+        <!-- Some rating -->
+        <h2>Satisfaction Rating:</h2>
+        People refer artistic/ aesthetic as "Je ne sais quio", how much of 
+        a "Je ne sais quio" do you think this site is? <br>
+        <div class="rating-section">
+            | 
+            1-<input type="radio" name="aesthetic" value="1">&nbsp;| 
+            2-<input type="radio" name="aesthetic" value="2">&nbsp;| 
+            3-<input type="radio" name="aesthetic" value="3">&nbsp;| 
+            4-<input type="radio" name="aesthetic" value="4">&nbsp;| 
+            5-<input type="radio" name="aesthetic" value="5">&nbsp;| 
+        </div>
+        How well do you think this site is in conducting its content and 
+        expressing its idea?
+        <div class="rating-section">
+            | 
+            1-<input type="radio" name="content" value="1">&nbsp;| 
+            2-<input type="radio" name="content" value="2">&nbsp;| 
+            3-<input type="radio" name="content" value="3">&nbsp;| 
+            4-<input type="radio" name="content" value="4">&nbsp;| 
+            5-<input type="radio" name="content" value="5">&nbsp;| 
+        </div>
+        What's your overall rating for this web site?
+        <div class="rating-section">
+            | 
+            1-<input type="radio" name="overall" value="1">&nbsp;| 
+            2-<input type="radio" name="overall" value="2">&nbsp;| 
+            3-<input type="radio" name="overall" value="3">&nbsp;| 
+            4-<input type="radio" name="overall" value="4">&nbsp;| 
+            5-<input type="radio" name="overall" value="5">&nbsp;| 
+        </div>
+
+         <!-- Game together-->
+         <h2>Let's share:</h2>
+        If you also happen to have the same hobby I do and wanted me to contact you later on
+        <div class="rating-section">
+            | 
+            Yes-<input type="radio" name="contact-later" value="1">&nbsp;| 
+            No-<input type="radio" name="contact-later" value="2">&nbsp;| 
+        </div> 
+        What is/are your interst?
+        <div class="rating-section">
+            | 
+            Game-<input type="checkbox" name="contact-later-interst" value="1">&nbsp;| 
+            Animas-<input type="checkbox" name="contact-later-interst" value="2">&nbsp;| 
+            Micro Controller-<input type="checkbox" name="contact-later-interst" value="3">&nbsp;|
+            Other-<input type="checkbox" name="contact-later-interst" value="4">&nbsp;| 
+        </div>
+ 
+
+        <!-- Some comments -->
+        <h2>Other comment/ suggestions:</h2>
+        If you have more suggestions/ comment to help me imporve the web site, <br>
+        please leave them below: <br>
+        <textarea name="other-comments" cols="85" rows="10" placeholder="No futher comments?"></textarea>
+        <br>
+
+       
+        <!-- submission button -->
+        <input class="submit-button" type="submit" value="Submit" >
+
+    </form>
+    </div>
+    
+    <!-- This section is for social media, copy alone with th heading meta and link data -->
+    <!-- from w3 school (for detail in reference) and you will have "share"  buttom sect -->
+    <div class="social_media_button_contrainer">
+        <h3 style="text-align: center;">Contact Me ...</h3>
+        <a href="https://www.facebook.com/suowei.hu" class="fa fa-facebook"></a>
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="https://www.pinterest.com.au/inexplicablefat/" class="fa fa-pinterest"></a>
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="https://www.instagram.com/suoweihu/" class="fa fa-instagram"></a>
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="https://www.youtube.com/channel/UCVMNO-X6LBHH00arL_BZKDg/" class="fa fa-youtube"></a>
+    </div>
+</body>
+</html>

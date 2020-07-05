@@ -1,0 +1,452 @@
+
+/* ===================== BASIC ===================== */
+body {
+    /* setting the font family */
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* enlarge the line height to 1.5 times font-size (for better readbility)*/
+    line-height: 1.5;
+}
+h1 {
+    /* add some characteristci to the font */
+   text-transform: uppercase;
+   font-family: 'TeXGyreAdventor', sans-serif;
+   /* remove the bold text (by default)    */
+   font-weight: normal;
+   line-height: 4rem;
+   /* center the text */
+   text-align: center;
+    /* remote bottom margin, add some top/right/left margin  */
+   /* and adject the padding for a better centering look*/  
+   margin: 4rem 0 1.75rem;
+   padding: 20px 30px;   
+}
+
+div {
+    /* remove the top,bottom margin, make browser automatically */
+    /* calculate the left,right margin (this will center the text)*/
+    margin: 0 auto;
+    /* give some extra bank space to top/bottom of the page*/
+    padding-top: 30px;
+    padding-bottom: 100px;
+    /* shorten the width of text per line to improve readability*/
+    max-width: 50%;
+}
+
+div.keyboard-gallery{
+    display: block;
+    margin: 3px 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+div.keyboard-desc{
+    /* Allowing the text to align with image */
+    display: block;
+    float: left;
+
+    /* some basic settings  */
+    height: 0px;
+    width: 40%; 
+    margin: 0px 3%;
+    /* padding: 0% 25%; */
+    margin-bottom: 0;
+    text-align: center;
+
+    /* Seeing the margin for the title/ descroption */
+    padding-top: 0%;
+    padding-bottom: 10%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+div.me_and_my_passion{
+    /* shorten the width of text per line to improve readability*/
+    max-width: 50%;
+}
+
+div#site-map-div{
+    /* Center the text in the site map page */
+    text-align: center;
+}
+/* ===================== BASIC ===================== */
+
+
+/* ===================== IMAGE ===================== */
+img.image-presentation{
+    /* limite the image's width (such that it wont be outof the page)*/
+    max-width: 900px;
+    height: auto;
+}
+
+img.image-presentation-keyboard{
+    /* This section of css style are for the: Keyboard Gallary page*/
+    border: 4px solid white;
+    border-radius: 14px;
+
+    /* limite the image's width (such that it wont be outof the page)*/
+    display: block;
+    height: 45%;
+    float: left; 
+    width: 45%; 
+    margin: 5px 5px;
+}
+img.image-presentation-keyboard:hover {
+border: 4px solid rgb(233, 123, 123);
+}
+.image-gallary-a{
+    display: block;
+}
+/* ===================== IMAGE ===================== */
+
+
+/* =================== MENU BAR ==================== */
+ul.anchor_section {
+    list-style-type: none;
+    /* margin: 10px; */
+    /* remove the outter box's padding */
+    padding: 0;
+    /* clipped overflow, making the rest of the content invisible */
+    overflow: hidden;
+    /* the color of the box containing smaller link block */
+    background-color: #333333;
+}
+ul.anchor_section li {
+    /* make each link aligns */
+    float: left;
+}
+a.anchor_links{
+    /* change the text color to white */
+    color: white;
+    /* remove the bottom horizontal bar */
+    text-decoration: none;
+    /* make link in the anchor link section a box */
+    display: block;
+    /* make the txt middle in the box */
+    text-align: center;
+    /* make the block bigger */
+    padding: 20px;
+}
+
+a.anchor_links:hover {
+    /* change background color of link block on mouse hover*/
+    background-color:rgb(233, 123, 123);
+}
+a.anchor_links_division:hover {
+    /* do not change background color of link block on mouse hover for vertical bar*/
+    background-color:#333333;
+}
+
+/* Fixed Position for menu bar: removed because the styling does 
+not look good fit with other existing element in the css styling */
+/* div.menu{ */
+    /* Remove some unwanted format */
+    /* margin: 0 0; */
+    /* padding: 0 0; */
+    /* border: 0 0; */
+    /* max-width: 100%; */
+    /* Add position tag to fix the menu position */
+    /* position: fixed; */
+    /* top: 0px; */
+    /* width: 100%; */
+/* } */
+
+/* =================== MENU BAR ==================== */
+
+
+/* =============== BLOCKQUOTE ================ */
+/* Partially from sspai (for more detail see source log page) */
+blockquote {
+    position: relative;
+    display: block;
+    /* adject the padding/align/margin/border */
+    /* (positioning)for better display effect */ 
+    margin: 37px auto;
+    border-left: 3px solid #fd281a;
+    font-style: normal;
+    text-align: left;
+    /* make text grey  */
+    color: #8e8787;
+    /* enlarge the font weight/size, decrease the relative line height*/
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* adjest the padding */
+    padding: 0 12px
+}
+
+/* Partially from sspai (for more detail see source log page) */
+blockquote:before {
+    /* The folloing lines will create a red quotation mark before the text*/
+    content: "";
+    width: 11.2px;
+    height: 8.4px;
+    /* This will add a  */
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAYAAADHeGwwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFBSURBVHgB7ZQ/UoNAFMa/t6BhYiF2ig2d2HGE5AYeIZwgeoLEk2S8QTxBcgNbxopGTReqmCjsk2UmCMifJDPOWPgVDLvzvd/7WN4s8Mui8gbbpgmjO2SGS5uVR0EYtkE+nfMemG4E0anmv3q1Dfj6YihBYzBMtZaQ/SN/Ma8Dp2E6JyNJfLvdSxoUmHpmdqyRZIyxh7jTnTGx2+QR6hE5lwOJHJwQJuv7xvRJICbk4BwIyEHZl35OfGU9ITMrI/fJXwS1cNs2pfGxzCCEKb1X/y+hzMglkWCvCZ4GOt70CilZ3tUNg4iMdeEMm47lu0qY21cGz5sC6eWN2LEmP3igBPLyUAUgJreqhiU/6s9vU1IzLCBmaFF+ZNVQEHjSViPWqzOBHUXQbOypyDDcnRscqv8Gf6ABx1rrdaykiWiJA/QFHEl+W66g4YEAAAAASUVORK5CYII=") no-repeat;
+    display: block;
+    background-size: contain;
+    line-height: 160%;
+    margin-left: 4px;
+    margin-bottom: 7.2px
+}
+
+/* This is for the question section in the Planning part in the me and my passion*/
+blockquote.question{
+    /* shrinked the text (weight, size) a little (comparing to normal quote) */
+    font-weight: 400;
+    font-size: 16px;
+}
+a{
+    color: rgb(233, 123, 123);
+}
+/* =============== BLOCKQUOTE ================ */
+
+
+
+/* =================== FORM ================== */
+input.submit-button{
+    /* center the button */
+    margin: 70px auto;
+    display: block;
+    /* shrink the outline border, make backgroudb transparent */
+    background-color:#333333;
+    border:1px solid #333332; 
+    /* change sizes */
+    width: 100px;
+    height: 40px;
+    
+    /* add some characteristci to the font */
+    font-family: 'TeXGyreAdventor', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+
+    /* rounded conner */
+    border-radius: 3px;
+    
+}
+input.submit-button:hover{
+    /* change color on hover*/
+    background-color: rgb(233, 123, 123)
+}
+div.rating-section{
+    /* center the satisfaction one selection radios*/
+    text-align: center;
+}
+
+
+.feedbackform-email{
+    /* Give a border to show the secmenting */
+    border: 2px solid #333333;
+    border-radius: 4px;
+    padding: 5% 15%;
+}
+
+.feedbackform-php{
+    /* Use dotted line instead of solid to show invalid */
+    border: 2px dashed #333333;
+    border-radius: 4px;
+    padding: 5% 15%;
+}
+/* =================== FORM ================== */
+
+
+
+
+/* ================== SOURCE LOG ================== */
+
+table.source-log-table{
+    /* Center the table */
+    margin: 0 auto;
+    /* Ceter the text */
+    text-align: center;
+}
+.source-log-table tr {
+    /* add some spacing and border for better visual */
+    border: 2px solid whitesmoke;
+    padding: 6px 12px;
+}
+.source-log-table td {
+    padding: 8px 12px;
+}
+.source-log-table th {
+    /* add some spacing and border for better visual */
+    border: 2px solid whitesmoke;
+    padding: 15px 12px;
+}
+.source-log-table tr:nth-child(2n) {
+    /* make the row of odd number a different color for better visual */
+    background-color: whitesmoke;
+}
+
+/* ================== SOURCE LOG ================== */
+
+
+/* ==================  IMAGE MAP ================== */
+.imageMap{
+    /* border */
+    border: 2px solid rgb(233, 123, 123);
+
+    /* center the image  */
+    display: block;;
+    margin: auto auto; 
+    
+    /* Since image map interpertes the exact coordinate of the axis*/
+    /* This is replaced with pre-processing image (shrink size manually) */
+    /* width: 50%; */
+}
+
+.imageMap_title{
+    display: block;
+    margin: auto auto; 
+    text-align: center;
+}
+
+.imageMap_text{
+    /* center the text*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 50%;
+}
+/* ==================  IMAGE MAP ================== */
+
+/* ====================  VIDEO ==================== */
+video{
+    display: block;
+    margin: auto auto;
+}
+.video_title{
+    display: block;
+    margin: auto auto; 
+    text-align: center;
+}
+.center {
+    display: block;
+    margin: auto auto; 
+    text-align: center;
+}
+/* ====================  VIDEO ==================== */
+
+
+/* THE FOLLOWING CSS IS FOR THE IMAGE MAP SECTION   */
+/* THE ORIGINAL TEMPLATE IS FROM W3 SCHOOL, SEE REF */
+/* =================== W3 SCHOOL ================== */
+div.gallery {
+margin: 5px 5px;
+border: 3px solid white;
+border-radius: 20px;
+float: left;
+width: 30%;
+height: 30%;
+}
+
+div.gallery:hover {
+border: 3px solid rgb(233, 123, 123);
+border-radius: 20px;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 3px 0px;
+text-align: center;
+}
+/* =================== W3 SCHOOL ================== */
+
+
+/* THE FOLLOWING CSS IS FOR THE SOCIAL MEDIA BUTTON */
+/* THE ORIGINAL TEMPLATE IS FROM W3 SCHOOL, SEE REF */
+/* ================= SOCIAL BUTTON =================*/
+.social_media_button_contrainer{
+    margin: 0 40%;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: rgb(233, 123, 123);
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    background: #fd281a;
+  }
+/* ================= SOCIAL BUTTON ================ */
+
+/* ================= SOCIAL FEEDS == ============== */
+.fb-post{
+    width: 30%;
+    margin: auto 1.5%;
+}
+/* ================= SOCIAL FEEDS == ============== */
+
+
+.search_container {
+    height: 70px;
+    width: 800px;
+    margin: 100px auto 0 auto;
+}
+.search_parent {
+    position: relative;
+}
+.search_box {
+    width: 50%;
+    font-size: large;
+    margin-left: 15%;
+
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    position: absolute;
+    color: rgb(233, 123, 123);
+}
+.search_box:hover{
+    color: rgb(233, 123, 123);
+}
+.search_submit {
+    width: 10%;
+    margin-left: 70%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search_submit:hover{
+    background: rgb(233, 123, 123);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ================= Study Music == ============== */
+a.study_music_avatar-contrainer{
+    float: left; 
+    margin: 5% 6.7%;
+}
+
+img.study_music_avatar{
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+img.study_music_avatar:hover {
+    border: 4px solid rgb(233, 123, 123);
+}
+
+/* ================= ToolTip Animation == ============== */
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }

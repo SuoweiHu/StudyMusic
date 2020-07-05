@@ -1,0 +1,59 @@
+
+
+/* This CSS is from the print-out, or in other words print-friendly formatt */
+/* It seeks for best performace only in text-rich content pages (some images is OK)*/
+
+@media print {
+
+    /*  Stuff to ignore while printing */
+    /* =============================== */
+    .anchor_section{
+        display: none;
+    }
+    .social_media_button_contrainer{
+        display: none;
+    }
+    /* ============================= */
+
+    /* Stuff that's altered a little */
+    /* ============================= */
+    body {
+        font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        line-height: 1.5;
+        font-size: small;
+    }
+    h1 {
+    text-transform: uppercase;
+    font-family: 'TeXGyreAdventor', sans-serif;
+    font-weight: normal;
+    line-height: 4rem;
+    text-align: center;
+    margin: auto auto;
+    padding: 0px 0px;   
+    }
+    /* ============================= */
+
+
+    /* Alter text/image for best look*/
+    /* ============================= */    
+    img{
+        display: inline;
+        /* centering the image */
+        margin: 0 20%;
+        /* Reduce  size (This is not always looking good) */
+        width: 50%;
+    }
+    div {
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        max-width: 100%;
+    }
+    div.me_and_my_passion{
+        max-width: 100%;
+    }
+    /* ============================= */
+
+}
+/* ================FOR PRINT FRIENDLY ============== */
+
