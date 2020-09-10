@@ -1,3 +1,2 @@
 # StudyMusic
-  Site for customer use....
-  Proceed to the link: https://suoweihu.github.io/StudyMusic/
+Link: https://suoweihu.github.io/StudyMusic/
