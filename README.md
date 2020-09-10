@@ -1,2 +1,3 @@
 # StudyMusic
-As name
+  Site for customer use....
+  Proceed to the link: https://suoweihu.github.io/StudyMusic/
